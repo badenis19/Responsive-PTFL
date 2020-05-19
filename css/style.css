@@ -78,7 +78,6 @@ h4{
 
 .leading{
   font-size: 1.1em; 
-  text-align: center;
 }
 
 
@@ -91,7 +90,8 @@ h4{
 }
 
 .site-nav {
-  margin: 0 20px;
+  padding: 0 20px;
+  background-color: var(--secondary);
 }
 
 .site-nav ul {
@@ -107,6 +107,7 @@ h4{
 
 #welcome {
   padding: 0 20px 20px 20px;
+  background-color: var(--secondary) ;
 }
 
 .welcome-text {
@@ -118,7 +119,8 @@ h4{
 }
 
 .welcome-img img {
-  width: 200%;
+  width: 105%;
+  border-radius: 50%;
 }
 
 .welcome-text a {
@@ -126,16 +128,24 @@ h4{
 }
 
 #portofolio {
-  background: url(/assets/square_bg.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  padding: 30px 20px
+  background: #F2F2F2;
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+  /* background-position: bottom; */
+  padding: 30px 20px;
 }
 
-#portofolio h3 {
+#portofolio h3, #portofolio h4 {
   margin-bottom: 0;
   text-align: center;
+  color: var(--secondary);
+}
+
+#portofolio img {
+  /* max-width: 100%; */
+  /* border-radius: 50%; */
+  /* margin-bottom: 0;
+  text-align: center; */
 }
 
 .projects a { /* to get every element inside <a> */
@@ -178,13 +188,19 @@ h4{
 
 #contact {
   padding: 30px 20px;
-  background-color: #080936;
+  /* background-color: #080936; */
+  background-color: #F2F2F2;
 }
 
-#contact h3, #contact h3 {
+#contact h3 {
   text-align: center;
   margin-bottom: 0;
+  color: var(--secondary);
 }
+
+/* #contact .leading {
+  text-align: center;
+} */
 
 #contact form {
   width: 80%;
@@ -203,12 +219,12 @@ h4{
 }
 
 footer {
-  padding: 30px 20px;
+  padding: 10px 20px;
   background-color: #14153D;
-  background-image: url(/assets/footer_image.png);
+  /* background-image: url(/assets/footer_image.png);
   background-size: 40%;
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: top center; */
 }
 
 footer .copyright {
@@ -240,11 +256,12 @@ footer img{
   }
 
   .welcome-img {
-    grid-column: 5/9;
+    grid-column: 6/9;
   }
 
   .welcome-img img {
-    width: 100%;
+    /* width: 100%; */
+    width: 70%;
   }
 
   .projects {
