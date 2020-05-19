@@ -188,13 +188,19 @@ h4{
 
 #contact {
   padding: 30px 20px;
-  background-color: #080936;
+  /* background-color: #080936; */
+  background-color: #F2F2F2;
 }
 
-#contact h3, #contact h3 {
+#contact h3 {
   text-align: center;
   margin-bottom: 0;
+  color: var(--secondary);
 }
+
+/* #contact .leading {
+  text-align: center;
+} */
 
 #contact form {
   width: 80%;
@@ -213,12 +219,12 @@ h4{
 }
 
 footer {
-  padding: 30px 20px;
+  padding: 10px 20px;
   background-color: #14153D;
-  background-image: url(/assets/footer_image.png);
+  /* background-image: url(/assets/footer_image.png);
   background-size: 40%;
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: top center; */
 }
 
 footer .copyright {
