@@ -3,6 +3,7 @@
 :root{
   --primary: #FFC636;
   --secondary: #0A0B5B;
+  --white: #F2F2F2;
 }
 
 /* reset - Removes default behavior */ 
@@ -46,7 +47,7 @@ input, textarea{
   padding: 10px 16px;
   border-radius: 20px;
   border: 2px solid #9893D8;
-  color: #F2F2F2;
+  color: var(--white);
 }
 
 /* fonts */
@@ -128,7 +129,7 @@ h4{
 }
 
 #portofolio {
-  background: #F2F2F2;
+  background: var(--white);
   /* background-size: cover; */
   /* background-repeat: no-repeat; */
   /* background-position: bottom; */
@@ -189,7 +190,7 @@ h4{
 #contact {
   padding: 30px 20px;
   /* background-color: #080936; */
-  background-color: #F2F2F2;
+  background-color: var(--white);
 }
 
 #contact h3 {
@@ -197,10 +198,6 @@ h4{
   margin-bottom: 0;
   color: var(--secondary);
 }
-
-/* #contact .leading {
-  text-align: center;
-} */
 
 #contact form {
   width: 80%;
@@ -212,6 +209,7 @@ h4{
 #contact input, #contact textarea {
   width: 100%;
   margin: 10px 0;
+  color: #000000;
 }
 
 #contact button {
@@ -221,10 +219,6 @@ h4{
 footer {
   padding: 10px 20px;
   background-color: #14153D;
-  /* background-image: url(/assets/footer_image.png);
-  background-size: 40%;
-  background-repeat: no-repeat;
-  background-position: top center; */
 }
 
 footer .copyright {
@@ -243,10 +237,13 @@ footer li {
   margin: 0 6px;
 }
 
-footer img{
-  width: 20px;
+.fab, .fas {
+  font-size: 20px;
 }
 
+.fab:hover, .fas:hover {
+  color: var(--white);
+}
 
 /* small tablet styles */
 @media screen and (min-width: 620px){
@@ -385,7 +382,6 @@ footer img{
 }
 
 
-
 /* Desktop styles */ 
 @media screen and (min-width: 1200px){
   body {
@@ -416,6 +412,10 @@ footer img{
 
   footer img {
     width: 30px;
+  }
+
+  .fab, .fas {
+    font-size: 40px;
   }
    
 
